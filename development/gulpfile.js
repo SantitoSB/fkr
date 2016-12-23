@@ -18,7 +18,7 @@ var gulp           = require('gulp'),
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/js/common.js', // Всегда в конце
+		'app/libs/bootstrap-3.3.7/js/bootstrap.min.js'
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify())
@@ -28,11 +28,18 @@ gulp.task('scripts', function() {
 
 gulp.task('browser-sync', function() {
 	browserSync({
-		server: {
-			baseDir: 'app'
-		},
+		proxy: 'fkr:81',
 		notify: false
 	});
+});
+
+gulp.task('css', function(){
+	return gulp.src([
+		'app/libs/bootstrap-3.3.7/css/bootstrap.min.css'
+	])
+		.pipe(concat('libs.min.css'))
+		.pipe(cleanCSS())
+		.pipe(gulp.dest('app/css'))
 });
 
 gulp.task('sass', function() {
@@ -51,6 +58,7 @@ gulp.task('watch', ['sass', 'scripts', 'browser-sync'], function() {
 	gulp.watch('app/sass/**/*.sass', ['sass']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['scripts']);
 	gulp.watch('app/*.html', browserSync.reload);
+	gulp.watch('app/**/*.php', browserSync.reload);
 });
 
 gulp.task('imagemin', function() {
