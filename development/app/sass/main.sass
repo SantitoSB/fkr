@@ -36,10 +36,38 @@ body
 	line-height: 1.75
 	font-family: $default-font
 	overflow-x: hidden
+h1,h2,h3
+	color: orange
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
+.top-line--wrapper
+	min-height: 40px
+	width: 100%
+.under-top-line--logo
+	width: 100%
+	min-height: 40px
+	background-repeat: no-repeat
+	background-position: center center
+	background-image: url('../img/logo/logo.png')
+	background-size: 30%
+	margin-top: 20px
+
+.bmn.navbar
+	&.navbar-inverse
+		background-image: url('../img/backgrounds/header_background.png')
+		background-size: cover
+		li>a
+			color: $menu-link
+	&.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover,
+	&.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover,
+	&.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover,
+	&.navbar-inverse .navbar-toggle
+		background-color: $dark-menu
+	.dropdown-menu li
+		a
+			color: $menu-dropdown-text
 
 @import "media" // Всегда в конце

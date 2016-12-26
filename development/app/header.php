@@ -5,8 +5,8 @@
 
 	<meta charset="utf-8">
 
-	<title>FKR</title>
-	<meta name="description" content="">
+	<title><?php echo $title; ?></title>
+	<meta name="description" content="<?php echo $description; ?>">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -28,5 +28,55 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
 </head>
+<nav>
+    <div class="top-line--wrapper">
+        <!-- Fixed navbar -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="bmn navbar navbar-inverse navbar-fixed-top">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#">Главная</a></li>
+                                    <li><a href="#about">О программе</a></li>
+                                    <li><a href="#contact">Контакты</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Выподающее меню <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Меню</a></li>
+                                            <li><a href="#">Меню</a></li>
+                                            <li><a href="#">Меню</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Меню</a></li>
+                                            <li><a href="#">Меню</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <form class="navbar-form navbar-right">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Email" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" placeholder="Пароль" class="form-control">
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Войти</button>
+                                </form>
+                            </div><!--/.nav-collapse -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
 
 <body>
