@@ -18,7 +18,8 @@ var gulp           = require('gulp'),
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/bootstrap-3.3.7/js/bootstrap.min.js'
+		'app/libs/bootstrap-3.3.7/js/bootstrap.min.js',
+        'app/libs/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js'
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify())
@@ -36,6 +37,7 @@ gulp.task('browser-sync', function() {
 gulp.task('css', function(){
 	return gulp.src([
 		'app/libs/bootstrap-3.3.7/css/bootstrap.min.css'
+
 	])
 		.pipe(concat('libs.min.css'))
 		.pipe(cleanCSS())
