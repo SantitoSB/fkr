@@ -14,9 +14,9 @@ $description = '';
             <div class="col-md-12">
                 <div class="header-wrapper">
                     <div class="main-header">
-                        <h1>Страница обработки результатов</h1>
+                        <h1>Страница 2 обработки результатов</h1>
                         <div class="subheading">
-                            <h6>Пожалуйста заполните форму</h6>
+                            <h6>Пожалуйста заполните форму!!!!</h6>
                         </div>
                     </div>
                 </div> <!-- header-->
@@ -162,9 +162,6 @@ $description = '';
 
 
                 </div>
-
-
-
 
             </div>
         </div> <!--end table-->
