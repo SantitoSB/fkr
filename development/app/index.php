@@ -11,7 +11,7 @@ $description = '';
     <div class="container">
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-8">
                 <div class="header-wrapper">
                     <div class="main-header">
                         <h1>Страница обработки результатов</h1>
@@ -21,6 +21,11 @@ $description = '';
                     </div>
                 </div> <!-- header-->
             </div> <!-- column -->
+            <div class="col-md-4">
+                <div class="logo">
+
+                </div>
+            </div>
 
         </div> <!--row-->
 
@@ -117,7 +122,9 @@ $description = '';
 
     <div class="container">
         <div class="row">
-            .con
+            <div class="col-md-12">
+                <h3>Таблица результатов</h3>
+            </div>
         </div>
     </div>
 
