@@ -62,13 +62,8 @@
                                     </li>
                                 </ul>
                                 <form class="navbar-form navbar-right">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Email" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" placeholder="Пароль" class="form-control">
-                                    </div>
-                                    <button type="submit" class="btn btn-default">Войти</button>
+
+                                    <button type="submit" class="btn btn-default">Выход</button>
                                 </form>
                             </div><!--/.nav-collapse -->
                         </div>
